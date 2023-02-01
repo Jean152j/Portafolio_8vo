@@ -11,7 +11,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: #000000;
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,26 +19,26 @@ html{
     z-index: 99;
 }
 .contenedor-header header{
-    max-width: 1100px;
+    max-width: 970px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+.contenedor-header header .logo p{
     font-family: 'Righteous';
     font-size: 36px;
     color: #edfe33;
     text-decoration: none;
 }
-.contenedor-header header .logo1 a{
+.contenedor-header header .logo1 p{
     font-family: 'Righteous';
     font-size: 36px;
     color: #0b72f9;
     text-decoration: none;
 }
-.contenedor-header header .logo2 a{
+.contenedor-header header .logo2 p{
     font-family: 'Righteous';
     font-size: 36px;
     color: #ca2115;
@@ -57,7 +57,8 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #076b89;
+    background-color: #ffffff;
+    color: #000000;
 }
 .nav-responsive{
     background-color: #0b72f9;
@@ -70,7 +71,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo1.jpg);
+    ;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -83,7 +84,7 @@ html{
     max-width: 350px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 4px;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
@@ -92,17 +93,14 @@ html{
     width: 80%;
     margin: auto;
     border-radius: 100%;
+    text-align: center;
 }
-.inicio .contenido-banner h1{
-    margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
-}
+
 .inicio .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+.contenido-banner .redes a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -118,8 +116,57 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #076b89;
 }
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 20px;
+   
+}
+
+span{
+    color: #ffdc16;
+}
+
+.info-content .descargarcv{
+    padding: 10px 20px;
+    background-color: #010101;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.info-content .descargarcv:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contenedor-img{
+   color: #ffdc16;
+   width: 236px;
+   height: 236px;
+   border: 7px solid;
+}
+
 .sobremi{
-    background-color: #1e2326;
+    background-color: #09334b;
     color: #fff;
     padding: 50px 20px;
 }
@@ -145,10 +192,11 @@ html{
 }
 .sobremi .fila{
     display: flex;
+    text-align: center;
 }
 .sobremi .fila .col
 {
-    width: 50%;
+    width: 100%;
 }
 .sobremi .fila .col h3{
     font-size: 28px;
@@ -167,14 +215,14 @@ html{
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #1CB698;
+    background-color: #0fe6d7;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
-    flex-wrap: wrap;
+   
 }
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
@@ -188,7 +236,8 @@ html{
     justify-content: center;
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #076b89;
+    background-color: #ffffff;
+    color: #000000;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -220,156 +269,7 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
-/* SECCION S K I L L S */
-.skills{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.skills h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
 
-}
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #1CB698;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1CB698;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
-}
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
-}
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
@@ -389,10 +289,10 @@ html{
 }
 .curriculum .fila{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .curriculum .fila .col{
-    width: 49%;
+    width: 50%;
     padding: 0 20px;
 }
 .curriculum .fila .col h3{
@@ -417,30 +317,30 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #1CB698;
+    color: #0fe6d7;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #1CB698;
+    color: #0fe6d7;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
+    border-right: 2px solid #0fe6d7;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #1CB698;
+    border-left: 2px solid #0fe6d7;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #0fe6d7;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -452,14 +352,14 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #0fe6d7;
     float: right;
     position: relative;
     bottom: 4px;
 }
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #0fe6d7;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -471,7 +371,7 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #0fe6d7;
     float: left;
     position: relative;
     bottom: 4px;
@@ -655,6 +555,32 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+.redes-sociales {
+    
+    padding: 20px 0; }
+    .redes-sociales .contenedor {
+      display: flex;
+      justify-content: center; }
+      .redes-sociales .contenedor a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        font-size: 30px;
+        padding: 15px 0;
+        display: block;
+        margin: 0 20px;
+        border-radius: 3px; }
+      .redes-sociales .contenedor .facebook:hover {
+        background: #3b5998; }
+      .redes-sociales .contenedor .linkedin:hover{
+        background: #3b5998;}
+      .redes-sociales .contenedor .youtube:hover {
+        background: #cd201f; }
+      .redes-sociales .contenedor .github:hover {
+        background: #666666; }
+      .redes-sociales .contenedor .instagram:hover {
+        background: #f172c2; }
+        
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
