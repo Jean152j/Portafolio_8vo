@@ -505,8 +505,8 @@ span{
 
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
+    
+    background-color: #0e3c57;
     color: #fff;
     padding: 50px 0;
 }
@@ -524,7 +524,7 @@ span{
     display: flex;
 }
 .contacto .col{
-    width: 50%;
+    width: 60%;
     padding: 10px;
     position: relative;
 }
@@ -540,14 +540,14 @@ span{
 }
 .contacto button{
     cursor: pointer;
-    background-color: transparent;
+    background-color: #000000;
     border: 2px solid #fff;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     position: relative;
     z-index: 10;
 }
@@ -557,10 +557,12 @@ span{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #ffffff;
+    color: #000000;
     z-index: -1;
     transition: 1s;
 }
+
 .contacto button:hover .overlay{
     width: 100%;
 }
@@ -572,8 +574,8 @@ span{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
+    max-width: 350px;
+    left: 38%;
     transform: translate(-50%, -50%);
 }
 .contacto .col .info ul{
@@ -583,12 +585,12 @@ span{
     margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
-    color: #1CB698;
+    color: #ffdc16;
     display: inline-block;
     margin-right: 20px;
 }
 footer{
-    background-color: #252A2E;
+    background-color: #000000;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -615,7 +617,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #ffdc16;
     color: #fff;
     position: absolute;
     left: 50%;
